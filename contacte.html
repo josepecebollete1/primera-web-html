@@ -6,6 +6,10 @@
     <meta name="description" content="Pàgina de contacte: envia'ns un missatge si tens algun dubte o suggeriment.">
     <title>Contacte - TMDB</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estils.css">
 </head>
 <body>
     <header>
@@ -20,32 +24,32 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="intro">
             <h1>Contacta amb nosaltres</h1>
             <p>Tens algun dubte o suggeriment? Escriu-nos.</p>
         </section>
-        <section>
-            <article>
-                <p>JZ</p>
+        <section class="contacte">
+            <article class="perfil">
+                <p class="avatar">JZ</p>
                 <h2>Josep Zelaya</h2>
-                <p>Alumne · Desenvolupament web</p>
+                <p class="rol">Alumne · Desenvolupament web</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             </article>
-            <form method="post" action="#">
+            <form class="formulari" method="post" action="#">
                 <h2>Envia'ns un missatge</h2>
-                <div>
+                <div class="camp">
                     <label for="nom">Nom i cognoms</label>
                     <input type="text" id="nom" name="nom" placeholder="El teu nom complet" required>
                 </div>
-                <div>
+                <div class="camp">
                     <label for="correu">Correu electrònic</label>
                     <input type="email" id="correu" name="correu" placeholder="nom@exemple.cat" required>
                 </div>
-                <div>
+                <div class="camp">
                     <label for="assumpte">Assumpte</label>
                     <input type="text" id="assumpte" name="assumpte" placeholder="Sobre què ens vols escriure?">
                 </div>
-                <div>
+                <div class="camp">
                     <label for="missatge">Missatge</label>
                     <textarea id="missatge" name="missatge" rows="6" placeholder="Escriu aquí el teu missatge..." required></textarea>
                 </div>

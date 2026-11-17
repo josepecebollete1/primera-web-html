@@ -6,6 +6,10 @@
     <meta name="description" content="Cercador de pel·lícules inspirat en The Movie Database (TMDB): troba milions de títols.">
     <title>Cercador de pel·lícules - TMDB</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estils.css">
 </head>
 <body>
     <header>
@@ -20,29 +24,33 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Buscar una pel·lícula</h1>
-            <p>Milions de títols, un sol cercador</p>
+        <section class="buscador">
+            <h1>Busca una pel·lícula</h1>
+            <p>Milions de títols, un sol cercador.</p>
             <form method="get" action="https://www.themoviedb.org/search">
                 <label for="cerca">Títol de la pel·lícula</label>
-                <input type="search" id="cerca" name="query" placeholder="Cerca una pel·lícula" required>
-                <button type="submit">Cercar</button>
+                <input type="search" id="cerca" name="query" placeholder="Cerca una pel·lícula, per exemple «Dune»..." required><button type="submit">Cercar</button>
             </form>
         </section>
-        <section>
+        <section class="pelicules">
             <h2>Resultats</h2>
-            <article>
-                <h3>Dune: Part Two</h3>
-                <p>2024</p>
-            </article>
-            <article>
-                <h3>The Lord of the Rings: The Two Towers</h3>
-                <p>2002</p>
-            </article>
-            <article>
-                <h3>Spider-Man: Brand New Day</h3>
-                <p>2026</p>
-            </article>
+            <div class="resultats">
+                <article class="targeta">
+                    <img src="img/dune.jpg" alt="Cartell de Dune: Part Two">
+                    <h3>Dune: Part Two</h3>
+                    <p>2024</p>
+                </article>
+                <article class="targeta">
+                    <img src="img/lotr.jpg" alt="Cartell de The Lord of the Rings: The Two Towers">
+                    <h3>The Lord of the Rings: The Two Towers</h3>
+                    <p>2002</p>
+                </article>
+                <article class="targeta">
+                    <img src="img/spiderman.jpg" alt="Cartell de Spider-Man: Brand New Day">
+                    <h3>Spider-Man: Brand New Day</h3>
+                    <p>2026</p>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
